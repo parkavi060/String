@@ -1,0 +1,49 @@
+###basic string methods
+
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+	    String m="helloworld";
+	    String x="HELLO";
+	    String o="I am Parkavi";
+	    String s="           Triming the space";
+	    String on="Parkavi|is|good|girl";
+	    int c=a.length();  //find length
+	    char ch=a.charAt(0);
+	    int ind=a.indexOf('e');
+	    String space="[\\s]";
+	    System.out.println("Index of:"+ind);//finding index
+	    System.out.println("Last index of:"+m.lastIndexOf("o"));//last index of the word
+		System.out.println("Concatination:"+a+" "+b);  //concatination
+		System.out.println("Length of hello is:"+c);
+		System.out.println("The particular charecter at the index is :"+ch);//charecter at the particular index
+		System.out.println("Does two string is equal:"+a.equalsIgnoreCase(x)); //boolean method
+		System.out.println("Does two string is equal:"+a.equals(x)); //without using ignore case
+		System.out.println("Upper case:"+m.toUpperCase());
+		System.out.println("Lower case:"+x.toLowerCase());
+		System.out.println("Substring:"+m.substring(1,7));//substring
+		System.out.println("Starts with:"+o.startsWith("I"));//starts with
+		System.out.println("Ends with:"+o.endsWith("I"));//ends with
+		System.out.println("Trim :"+s.trim());
+		
+		String str[]=o.split(space);
+		System.out.println("Spliting the string:");//Splitting the string
+		for(String spliting:str){
+		    System.out.println(spliting);//Spliting the string
+		}
+		System.out.println("Parkavi".matches(on));
+		
+		String reverse="";//reversing a string 
+		for (int i=m.length()-1;i>=0;i--){
+		    reverse+=m.charAt(i);
+		}
+		    System.out.println("The reversed String is:"+reverse);//reverse a string
+		    System.out.println("Replacing a String:"+a.replace('l','p'));
+		
+	}
+}
