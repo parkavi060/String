@@ -152,3 +152,21 @@ public class Main
 }
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+//finding alphabet is present in a string or not
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="Hello World";
+	    if(str.matches(".*[a-zA-Z]+.*")){
+	        System.out.println("Yes it contains alphabetical letters");
+	    }
+	    else{
+		System.out.println("No it does not contains any alphabetical letters");
+	}
+}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
