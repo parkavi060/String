@@ -1,0 +1,136 @@
+##count a charecter
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="Hello";
+	    char ch='l';
+	    int count=0;
+	    for(int i=0;i<=str.length()-1;i++){
+	        if(str.charAt(i)==ch) count++;
+	    }
+	    System.out.println(count);
+		
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//concatination
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+		System.out.println(a+" "+b);
+	}
+}
+--------------------------------------------------------------------------------
+
+//length():
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+	    int c=a.length();  //find length
+		System.out.println(a+" "+b);  //concatination
+		System.out.println(c);
+	}
+}
+
+-----------------------------------------------------------------------------------
+
+//charAt() method:
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+	    int c=a.length();  //find length
+	    char ch=a.charAt(0);
+		System.out.println(a+" "+b);  //concatenation
+		System.out.println(c);
+		System.out.println(ch);//character at the particular index
+	}
+}
+
+---------------------------------------------------------------------------------------
+
+
+//Boolean method():
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+	    int c=a.length();  //find length
+	    char ch=a.charAt(0);
+		System.out.println(a+" "+b);  //concatination
+		System.out.println(c);
+		System.out.println(ch);//charecter at the particular index
+		System.out.print(a.equals(b)); //boolean method
+	}
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//uppercaseand lowercase
+
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+	    String m="helloworld";
+	    int c=a.length();  //find length
+	    char ch=a.charAt(0);
+		System.out.println(a+" "+b);  //concatination
+		System.out.println(c);
+		System.out.println(ch);//charecter at the particular index
+		System.out.println(a.equals(b)); //boolean method
+		System.out.println(m.toUpperCase());
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//strings code..
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a="Hello";
+	    String b="World";
+	    String m="helloworld";
+	    String x="HELLO";
+	    int c=a.length();  //find length
+	    char ch=a.charAt(0);
+	    int ind=a.indexOf('e');
+	    System.out.println("Index of:"+ind);//finding index
+		System.out.println("Concatination:"+a+" "+b);  //concatination
+		System.out.println("Length of hello is:"+c);
+		System.out.println("The particular charecter at the index is :"+ch);//charecter at the particular index
+		System.out.println("Does two string is equal:"+a.equalsIgnoreCase(x)); //boolean method
+		System.out.println("Does two string is equal:"+a.equals(x)); //without using ignore case
+		System.out.println("Upper case:"+m.toUpperCase());
+		System.out.println("Lower case:"+x.toLowerCase());
+		System.out.println("Substring:"+m.substring(1,7));//substring
+	}
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
