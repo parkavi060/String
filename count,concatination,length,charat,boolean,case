@@ -170,3 +170,20 @@ public class Main
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+//also find number if number present in a string it return false
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String str="Hello 12World";
+	    if(str.matches("[a-z A-Z]+")){
+	        System.out.println("Yes it contains alphabetical letters");
+	    }
+	    else{
+		System.out.println("No it does not contains any alphabetical letters");
+	}
+}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
